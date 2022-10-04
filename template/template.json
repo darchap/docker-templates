@@ -6,7 +6,7 @@
                 "DNS",
                 "Tools"
             ],
-            "description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.\r\n\r\nFirst, go to duckdns site, register your subdomain and retrieve your token\r\nThen run the docker create command above with your subdomain(s) and token\r\nIt will update your IP with the DuckDNS service every 5 minutes\r\n\r\n",
+            "description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence. First, go to duckdns site, register your subdomain and retrieve your token. Then go back here and deploy the docker container with your subdomain(s) and token. It will update your IP with the DuckDNS service every 5 minutes.",
             "env": [
                 {
                     "default": "",
@@ -35,13 +35,13 @@
                 }
             ],
             "image": "linuxserver/duckdns:latest",
-            "logo": "https://raw.githubusercontent.com/darchap/docker-templates/main/images/duck.png",
+            "logo": "https://raw.githubusercontent.com/darchap/docker-templates/main/images/duckdns.png",
             "name": "duckdns",
             "platform": "linux",
             "restart_policy": "unless-stopped",
             "title": "Duck DNS",
             "type": 1,
-            "note": "<h3>Template created by darchap</h3><b>Check my Github page: <a href=\"https://github.com/darchap/docker-templates\" target=\"_blank\">https://github.com/darchap/docker-templates</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.duckdns.org/\" target=\"_blank\">https://www.duckdns.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-duckdns\" target=\"_blank\">https://docs.linuxserver.io/images/docker-duckdns</a><br><br><br>"
+            "note": "<h3>Template created by darchap</h3><b>Check my Github page: <a href=\"https://github.com/darchap/docker-templates\" target=\"_blank\">https://github.com/darchap/docker-templates</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.duckdns.org/\" target=\"_blank\">https://www.duckdns.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-duckdns\" target=\"_blank\">https://docs.linuxserver.io/images/docker-duckdns</a><br><br>"
         },
         {
             "categories": [
@@ -106,7 +106,7 @@
             "restart_policy": "unless-stopped",
             "title": "Nginx Proxy Manager v2 with Sqlite and Goaccess Charts",
             "type": 3,
-            "note": "<h3>Template created by darchap</h3><b>Check my Github page: <a href=\"https://github.com/darchap/docker-templates\" target=\"_blank\">https://github.com/darchap/docker-templates</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#running-the-app\" target=\"_blank\">https://nginxproxymanager.com/setup/#running-the-app</a><br><br><br>"
+            "note": "<h3>Template created by darchap</h3><b>Check my Github page: <a href=\"https://github.com/darchap/docker-templates\" target=\"_blank\">https://github.com/darchap/docker-templates</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#running-the-app\" target=\"_blank\">https://nginxproxymanager.com/setup/#running-the-app</a><br><br>"
         }
     ]
 }
