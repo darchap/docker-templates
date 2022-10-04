@@ -35,7 +35,7 @@
                 }
             ],
             "image": "linuxserver/duckdns:latest",
-            "logo": "https://raw.githubusercontent.com/darchap/docker-templates/main/images/nginx-proxy-manager.png",
+            "logo": "https://raw.githubusercontent.com/darchap/docker-templates/main/images/duck.png",
             "name": "duckdns",
             "platform": "linux",
             "restart_policy": "unless-stopped",
