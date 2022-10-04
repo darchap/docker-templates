@@ -66,13 +66,13 @@
                     "name": "TZ"
                 },
                 {
-                    "default": "false",
+                    "default": "False",
                     "label": "SKIP_ARCHIVED_LOGS",
                     "name": "SKIP_ARCHIVED_LOGS",
                     "description": "Defaults to false. Set to true to skip archived logs, i.e. proxy-host*.gz"
                 },
                 {
-                    "default": "false",
+                    "default": "False",
                     "label": "BASIC_AUTH",
                     "name": "BASIC_AUTH",
                     "description": "Defaults to false. Set to true to enable nginx basic authentication. Docker container needs to stopped or restarted each time this flag is modified. This allows for the .htpasswd file to be changed accordingly."
@@ -84,7 +84,7 @@
                     "description": "(Optional) Requires BASIC_AUTH to bet set to true. Username for basic authentication."
                 },
                 {
-                    "default": "Password",
+                    "default": "pass",
                     "label": "BASIC_AUTH_PASSWORD Ignore if Basic Auth set to false",
                     "name": "BASIC_AUTH_PASSWORD",
                     "description": "(Optional) Requires BASIC_AUTH to bet set to true. Password for basic authentication."
@@ -104,9 +104,9 @@
                 "url": "https://github.com/darchap/docker-templates"
             },
             "restart_policy": "unless-stopped",
-            "title": "Nginx Proxy Manager v2 with Sqlite and Goaccess Charts",
+            "title": "Nginx Proxy Manager with Sqlite and Goaccess Charts",
             "type": 3,
-            "note": "<h3>Template created by darchap</h3><b>Check my Github page: <a href=\"https://github.com/darchap/docker-templates\" target=\"_blank\">https://github.com/darchap/docker-templates</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#running-the-app\" target=\"_blank\">https://nginxproxymanager.com/setup/#running-the-app</a><br><br>"
+            "note": "<h3>Template created by darchap</h3><b>Check my Github page: <a href=\"https://github.com/darchap/docker-templates\" target=\"_blank\">https://github.com/darchap/docker-templates</a></b><br><br><b>Official NPM Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#running-the-app\" target=\"_blank\">https://nginxproxymanager.com/setup/#running-the-app</a><br><b>Official GoAccess Documentation: </b><a href=\"https://github.com/xavier-hernandez/goaccess-for-nginxproxymanager\" target=\"_blank\">https://github.com/xavier-hernandez/goaccess-for-nginxproxymanager</a><br><br>"
         }
     ]
 }
