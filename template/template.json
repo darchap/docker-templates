@@ -107,6 +107,30 @@
             "title": "Nginx Proxy Manager with Sqlite and Goaccess Charts",
             "type": 3,
             "note": "<h3>Template created by darchap</h3><b>Check my Github page: <a href=\"https://github.com/darchap/docker-templates\" target=\"_blank\">https://github.com/darchap/docker-templates</a></b><br><br><b>Official NPM Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#running-the-app\" target=\"_blank\">https://nginxproxymanager.com/setup/#running-the-app</a><br><b>Official GoAccess Documentation: </b><a href=\"https://github.com/xavier-hernandez/goaccess-for-nginxproxymanager\" target=\"_blank\">https://github.com/xavier-hernandez/goaccess-for-nginxproxymanager</a><br><br>"
+        },
+        {
+            "categories": [
+                "Other",
+                "Tools"
+            ],
+            "description": "Alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.",
+            "image": "vaultwarden/server:latest",
+            "logo": "https://raw.githubusercontent.com/darchap/docker-templates/main/images/vaultwarden.png",
+            "name": "vaultwarden",
+            "platform": "linux",
+            "ports": [
+                "8010:80/tcp"
+            ],
+            "restart_policy": "unless-stopped",
+            "title": "Vaultwarden",
+            "type": 1,
+            "note": "<h3>Template created by darchap</h3><b>Check my Github page: <a href=\"https://github.com/darchap/docker-templates\" target=\"_blank\">https://github.com/darchap/docker-templates</a></b><br><br><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/vaultwarden/server\" target=\"_blank\">https://hub.docker.com/r/vaultwarden/server</a><br><br>",
+            "volumes": [
+                {
+                    "bind": "/portainer/Files/AppData/Config/Vaultwarden",
+                    "container": "/data"
+                }
+            ]
         }
     ]
 }
