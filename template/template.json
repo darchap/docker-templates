@@ -131,6 +131,43 @@
                     "container": "/data"
                 }
             ]
+        },
+        {
+            "categories": [
+                "Tools",
+                "Web",
+                "Other"
+            ],
+            "description": "Run a Speedtest every hour and graph the results.  See https://hub.docker.com/r/henrywhitaker3/speedtest-tracker/tags for arch options",
+            "env": [
+                {
+                    "default": "Europe/Madrid",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
+                {
+                    "default": "true",
+                    "label": "OOKLA_EULA_GDPR",
+                    "name": "OOKLA_EULA_GDPR"
+                }
+            ],
+            "image": "henrywhitaker3/speedtest-tracker:dev",
+            "logo": "https://raw.githubusercontent.com/darchap/docker-templates/main/images/speedtest.png",
+            "name": "speedtest-tracker",
+            "platform": "linux",
+            "ports": [
+                "8765:80/tcp"
+            ],
+            "restart_policy": "unless-stopped",
+            "title": "Speedtest Tracker",
+            "type": 1,
+            "note": "<h3>Template created by darchap</h3><b>Check my Github page: <a href=\"https://github.com/darchap/docker-templates\" target=\"_blank\">https://github.com/darchap/docker-templates</a></b><br><br><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/henrywhitaker3/speedtest-tracker\" target=\"_blank\">https://hub.docker.com/r/henrywhitaker3/speedtest-tracker</a><br><br>",
+            "volumes": [
+                {
+                    "bind": "/portainer/Files/AppData/Config/speedtest-tracker",
+                    "container": "/config"
+                }
+            ]
         }
     ]
 }
