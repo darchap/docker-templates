@@ -168,6 +168,46 @@
                     "container": "/config"
                 }
             ]
+        },
+        {
+            "categories": [
+                "Other"
+            ],
+            "description": "FreshRSS is a self-hosted RSS feed aggregator.",
+            "env": [
+                {
+                    "default": "1000",
+                    "label": "PUID",
+                    "name": "PUID"
+                },
+                {
+                    "default": "1000",
+                    "label": "PGID",
+                    "name": "PGID"
+                },
+                {
+                    "default": "Europe/Madrid",
+                    "label": "TZ",
+                    "name": "TZ"
+                }
+            ],
+            "image": "linuxserver/freshrss:latest",
+            "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/freshrss-icon.png",
+            "name": "freshrss",
+            "platform": "linux",
+            "ports": [
+                "8132:80/tcp"
+            ],
+            "restart_policy": "unless-stopped",
+            "title": "FreshRSS",
+            "type": 1,
+            "volumes": [
+                {
+                    "bind": "/portainer/Files/AppData/Config/freshrss",
+                    "container": "/config"
+                }
+            ],
+            "note": "<h3>Template created by darchap</h3><b>Check my Github page: <a href=\"https://github.com/darchap/docker-templates\" target=\"_blank\">https://github.com/darchap/docker-templates</a></b><br><br><b>Official FreshRSS Webpage: </b><a href=\"https://freshrss.org/\" target=\"_blank\">https://freshrss.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/freshrss\" target=\"_blank\">https://hub.docker.com/r/linuxserver/freshrss</a><br><br>"
         }
     ]
 }
