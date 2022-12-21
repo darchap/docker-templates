@@ -192,7 +192,7 @@
                 }
             ],
             "image": "linuxserver/freshrss:latest",
-            "logo": "https://raw.githubusercontent.com/darchap/docker-templates/main/images/freshrss-icon.png",
+            "logo": "https://raw.githubusercontent.com/darchap/docker-templates/main/images/freshrss.png",
             "name": "freshrss",
             "platform": "linux",
             "ports": [
