@@ -138,34 +138,39 @@
                 "Web",
                 "Other"
             ],
-            "description": "Run a Speedtest every hour and graph the results.  See https://hub.docker.com/r/henrywhitaker3/speedtest-tracker/tags for arch options",
+            "description": "Speedtest Tracker is a self-hosted internet performance tracking application that runs speedtest checks against Ookla's Speedtest service.",
             "env": [
                 {
-                    "default": "Europe/Madrid",
-                    "label": "TZ",
-                    "name": "TZ"
+                    "default": "1000",
+                    "label": "PUID",
+                    "name": "PUID"
                 },
                 {
-                    "default": "true",
-                    "label": "OOKLA_EULA_GDPR",
-                    "name": "OOKLA_EULA_GDPR"
+                    "default": "1000",
+                    "label": "PGID",
+                    "name": "PGID"
                 }
             ],
-            "image": "henrywhitaker3/speedtest-tracker:dev",
+            "image": "ghcr.io/alexjustesen/speedtest-tracker:latest",
             "logo": "https://raw.githubusercontent.com/darchap/docker-templates/main/images/speedtest.png",
-            "name": "speedtest-tracker",
+            "name": "speedtest-tracker2",
             "platform": "linux",
             "ports": [
-                "8765:80/tcp"
+                "8765:80/tcp",
+                "8766:443/tcp"
             ],
             "restart_policy": "unless-stopped",
             "title": "Speedtest Tracker",
             "type": 1,
-            "note": "<h3>Template created by darchap</h3><b>Check my Github page: <a href=\"https://github.com/darchap/docker-templates\" target=\"_blank\">https://github.com/darchap/docker-templates</a></b><br><br><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/henrywhitaker3/speedtest-tracker\" target=\"_blank\">https://hub.docker.com/r/henrywhitaker3/speedtest-tracker</a><br><br>",
+            "note": "<h3>Template created by darchap</h3><b>Check my Github page: <a href=\"https://github.com/darchap/docker-templates\" target=\"_blank\">https://github.com/darchap/docker-templates</a></b><br><br><br><b>Official Documentation: </b><a href=\"https://docs.speedtest-tracker.dev/\" target=\"_blank\">https://docs.speedtest-tracker.dev/</a><br><br>",
             "volumes": [
                 {
-                    "bind": "/portainer/Files/AppData/Config/speedtest-tracker",
+                    "bind": "/portainer/Files/AppData/Config/speedtest-tracker2",
                     "container": "/config"
+                },
+                {
+                    "bind": "/portainer/Files/AppData/Config/speedtest-tracker2/web",
+                    "container": "/etc/ssl/web"
                 }
             ]
         },
