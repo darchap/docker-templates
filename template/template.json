@@ -153,7 +153,7 @@
             ],
             "image": "ghcr.io/alexjustesen/speedtest-tracker:latest",
             "logo": "https://raw.githubusercontent.com/darchap/docker-templates/main/images/speedtest.png",
-            "name": "speedtest-tracker2",
+            "name": "speedtest-tracker",
             "platform": "linux",
             "ports": [
                 "8765:80/tcp",
@@ -165,11 +165,11 @@
             "note": "<h3>Template created by darchap</h3><b>Check my Github page: <a href=\"https://github.com/darchap/docker-templates\" target=\"_blank\">https://github.com/darchap/docker-templates</a></b><br><br><br><b>Official Documentation: </b><a href=\"https://docs.speedtest-tracker.dev/\" target=\"_blank\">https://docs.speedtest-tracker.dev/</a><br><br>",
             "volumes": [
                 {
-                    "bind": "/portainer/Files/AppData/Config/speedtest-tracker2",
+                    "bind": "/portainer/Files/AppData/Config/speedtest-tracker",
                     "container": "/config"
                 },
                 {
-                    "bind": "/portainer/Files/AppData/Config/speedtest-tracker2/web",
+                    "bind": "/portainer/Files/AppData/Config/speedtest-tracker/web",
                     "container": "/etc/ssl/web"
                 }
             ]
