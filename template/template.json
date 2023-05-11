@@ -215,6 +215,30 @@
             "note": "<h3>Template created by darchap</h3><b>Check my Github page: <a href=\"https://github.com/darchap/docker-templates\" target=\"_blank\">https://github.com/darchap/docker-templates</a></b><br><br><b>Official FreshRSS Webpage: </b><a href=\"https://freshrss.org/\" target=\"_blank\">https://freshrss.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/freshrss\" target=\"_blank\">https://hub.docker.com/r/linuxserver/freshrss</a><br><br>"
         },
         {
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Uptime Kuma is an easy-to-use self-hosted monitoring tool.",
+			"image": "louislam/uptime-kuma:latest",
+			"logo": "https://raw.githubusercontent.com/darchap/docker-templates/main/images/uptime-kuma.svg",
+			"name": "uptime-kuma",
+			"platform": "linux",
+			"ports": [
+				"3001:3001/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Uptime Kuma",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/uptime-kuma",
+					"container": "/app/data"
+				}
+			],
+            "note": "<h3>Template created by darchap</h3><b>Check my Github page: <a href=\"https://github.com/darchap/docker-templates\" target=\"_blank\">https://github.com/darchap/docker-templates</a></b><br><br><b>Official Uptime-Kuma Github: </b><a href=\"https://github.com/louislam/uptime-kuma\" target=\"_blank\">https://github.com/louislam/uptime-kuma/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/louislam/uptime-kuma\" target=\"_blank\">https://hub.docker.com/r/louislam/uptime-kuma</a><br><br>"
+		},
+        {
             "categories": [
                 "Music"
             ],
